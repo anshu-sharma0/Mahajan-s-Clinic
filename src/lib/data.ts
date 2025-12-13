@@ -1,91 +1,103 @@
 export const DOCTOR = {
-  name: "Dr. Sarah Mitchell",
-  title: "MD, FACP",
-  specialty: "Internal Medicine & Preventive Care",
+  name: "Dr. Mahajan",
+  title: "MBBS",
+  specialty: "General Physician & Family Medicine",
   image: "/doctor-profile.jpg",
-  bio: "With over 15 years of experience in internal medicine, Dr. Mitchell is dedicated to providing comprehensive, patient-centered care. Her approach combines evidence-based medicine with a genuine commitment to understanding each patient's unique health journey.",
-  extendedBio: `Dr. Sarah Mitchell graduated with honors from Stanford University School of Medicine and completed her residency at UCSF Medical Center. She is board-certified in Internal Medicine and holds a fellowship from the American College of Physicians.
+  bio: "With over 40 years of experience in general medicine, Dr. Mahajan is dedicated to providing comprehensive, patient-centered care. His approach combines evidence-based medicine with a genuine commitment to understanding each patient's unique health journey.",
+  extendedBio: `Dr. Mahajan has been serving the Dinanagar community for over four decades, building lasting relationships with patients and their families across generations.
 
-Her philosophy centers on preventive care and building lasting relationships with patients. Dr. Mitchell believes that understanding a patient's lifestyle, goals, and concerns is essential to providing effective healthcare.
+His philosophy centers on patient care and building trustworthy doctor-patient relationships. Dr. Mahajan believes that understanding a patient's lifestyle, concerns, and medical history is essential to providing effective healthcare.
 
-Beyond her clinical practice, Dr. Mitchell is an advocate for health education and regularly contributes to medical journals on topics including chronic disease management and preventive health strategies.`,
+Beyond his clinical practice, Dr. Mahajan is known for his compassionate approach, taking the time to listen to each patient with care and patience. His 40+ years of experience brings invaluable medical judgment to every consultation.`,
   qualifications: [
-    "MD from Stanford University School of Medicine",
-    "Residency at UCSF Medical Center",
-    "Board Certified in Internal Medicine",
-    "Fellow, American College of Physicians (FACP)",
-    "15+ Years of Clinical Experience",
+    "MBBS from reputed medical college",
+    "40+ Years of Clinical Experience",
+    "Expertise in Chronic Disease Management",
+    "Specialized in Family Medicine",
+    "Trusted by generations of families",
   ],
-  languages: ["English", "Spanish", "French"],
+  languages: ["Hindi", "Punjabi", "English"],
 };
 
 export const SERVICES = [
   {
-    id: "preventive-care",
-    title: "Preventive Care",
-    description: "Comprehensive health screenings, vaccinations, and wellness exams to keep you healthy and detect potential issues early.",
-    icon: "Shield",
-    features: ["Annual Physical Exams", "Health Screenings", "Vaccinations", "Lifestyle Counseling"],
+    id: "general-consultation",
+    title: "General Consultation & Diagnosis",
+    description: "Comprehensive check-ups for all age groups with detailed evaluation based on symptoms, history, and tests.",
+    icon: "Stethoscope",
+    features: [
+      "Comprehensive check-ups for all age groups",
+      "Listening to symptoms with care and patience",
+      "Detailed evaluation based on symptoms, history, and tests",
+      "Special focus on chronic conditions like diabetes, BP, thyroid",
+      "Evidence-based medical judgment backed by 40+ years of experience",
+    ],
+  },
+  {
+    id: "personalized-treatment",
+    title: "Personalized Treatment",
+    description: "Treatment plans tailored to each patient's needs with safe and effective medication plans.",
+    icon: "Pill",
+    features: [
+      "Treatment plans tailored to each patient's needs",
+      "Safe and effective medication plans",
+      "Guidance for stress-related symptoms and lifestyle balance",
+      "Building trustworthy doctor–patient relationships over decades",
+    ],
+  },
+  {
+    id: "lab-testing",
+    title: "Lab Testing & Preventive Care",
+    description: "Full range of blood tests, urine tests, and diagnostic screenings with accurate, quick reports.",
+    icon: "TestTube",
+    features: [
+      "Full range of blood tests, urine tests, and diagnostic screenings",
+      "Accurate, quick reports for faster treatment",
+      "Routine health checkup packages available",
+      "Affordable and reliable lab services under one roof",
+      "Early detection of risk factors",
+      "Regular screening for BP, sugar, cholesterol, thyroid",
+    ],
   },
   {
     id: "chronic-disease",
     title: "Chronic Disease Management",
-    description: "Expert management of ongoing conditions including diabetes, hypertension, and heart disease with personalized treatment plans.",
-    icon: "Heart",
-    features: ["Diabetes Care", "Hypertension Management", "Heart Health", "Medication Management"],
-  },
-  {
-    id: "acute-care",
-    title: "Acute Care",
-    description: "Prompt evaluation and treatment for sudden illnesses and injuries, from infections to minor emergencies.",
-    icon: "Activity",
-    features: ["Same-Day Appointments", "Illness Treatment", "Minor Injuries", "Urgent Consultations"],
-  },
-  {
-    id: "womens-health",
-    title: "Women's Health",
-    description: "Specialized care addressing women's unique health needs through every stage of life.",
-    icon: "Flower2",
-    features: ["Wellness Exams", "Reproductive Health", "Menopause Care", "Health Counseling"],
-  },
-  {
-    id: "senior-care",
-    title: "Senior Care",
-    description: "Compassionate, thorough care for older adults focusing on maintaining independence and quality of life.",
-    icon: "Users",
-    features: ["Geriatric Assessments", "Fall Prevention", "Memory Care", "Care Coordination"],
-  },
-  {
-    id: "mental-wellness",
-    title: "Mental Wellness",
-    description: "Integrated mental health support including anxiety and depression screening, stress management, and wellness counseling.",
-    icon: "Brain",
-    features: ["Anxiety Support", "Depression Screening", "Stress Management", "Wellness Counseling"],
+    description: "Long-term care for diabetes, hypertension, asthma, arthritis, and thyroid issues with regular follow-ups.",
+    icon: "HeartPulse",
+    features: [
+      "Long-term care for diabetes, hypertension, asthma, arthritis, thyroid issues",
+      "Regular follow-up sessions",
+      "Guidance for diet, exercise, and lifestyle changes",
+    ],
   },
 ];
 
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Jennifer Lawrence",
-    text: "Dr. Mitchell truly listens. For the first time, I feel like my doctor understands my health goals and works with me as a partner. The entire staff is warm and professional.",
+    name: "Rajesh Kumar",
+    text: "Dr. Mahajan truly listens. For the first time, I feel like my doctor understands my health goals and works with me as a partner. The entire staff is warm and professional.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Michael Chen",
-    text: "After years of feeling rushed through appointments, Harmony Medical Center is a breath of fresh air. Thorough, thoughtful care in a beautiful, calming environment.",
+    name: "Sunita Sharma",
+    text: "After years of feeling rushed through appointments, Mahajan's Clinic is a breath of fresh air. Thorough, thoughtful care in a welcoming environment.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Sarah Thompson",
-    text: "The preventive care approach here has transformed my health. Dr. Mitchell helped me make sustainable changes that have made a real difference in how I feel every day.",
+    name: "Amit Singh",
+    text: "Our family has been visiting Dr. Mahajan for three generations. His experience and care have made a real difference in our lives.",
     rating: 5,
   },
 ];
 
 export const WHY_CHOOSE_US = [
+  {
+    title: "40+ Years of Experience",
+    description: "Decades of medical expertise serving the Dinanagar community with trusted, reliable healthcare.",
+  },
   {
     title: "Patient-Centered Approach",
     description: "We take time to understand your unique health needs, concerns, and goals. Your care plan is tailored specifically to you.",
@@ -95,11 +107,7 @@ export const WHY_CHOOSE_US = [
     description: "From preventive screenings to chronic disease management, we provide complete care under one roof.",
   },
   {
-    title: "Modern Facility",
-    description: "Our clinic features state-of-the-art equipment and a calming environment designed with your comfort in mind.",
-  },
-  {
-    title: "Accessible Healthcare",
-    description: "Same-day appointments available. We work with most insurance plans and offer transparent pricing.",
+    title: "Affordable Healthcare",
+    description: "Quality healthcare that's accessible. We believe everyone deserves excellent medical care.",
   },
 ];

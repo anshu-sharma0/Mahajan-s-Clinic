@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Stethoscope } from "lucide-react";
 import { CLINIC_INFO, NAV_LINKS } from "@/lib/constants";
 
 export const Footer = () => {
@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <span className="font-display text-xl font-bold text-primary-foreground">H</span>
+                <Stethoscope className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="font-display text-xl font-semibold">
                 {CLINIC_INFO.name.split(" ")[0]}

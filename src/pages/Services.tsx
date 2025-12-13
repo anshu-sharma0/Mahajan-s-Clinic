@@ -2,15 +2,13 @@ import { SERVICES } from "@/lib/data";
 import { Section } from "@/components/ui/section";
 import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, Heart, Activity, Flower2, Users, Brain, Calendar, ArrowRight } from "lucide-react";
+import { Stethoscope, Pill, TestTube, HeartPulse, Calendar, ArrowRight } from "lucide-react";
 
 const iconMap = {
-  Shield,
-  Heart,
-  Activity,
-  Flower2,
-  Users,
-  Brain,
+  Stethoscope,
+  Pill,
+  TestTube,
+  HeartPulse,
 };
 
 const Services = () => {

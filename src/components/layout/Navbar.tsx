@@ -13,12 +13,19 @@ export const Navbar = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full border-b border-border/50 transition-colors",
+        isOpen
+          ? "bg-white"
+          : "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80"
+      )}
+    >
       <nav className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
           <img src={logoImg} alt="Mahajan's Clinic" className="h-12 w-12 rounded-lg object-contain" />
-          <div className="hidden sm:block">
+          <div className="">
             <span className="font-display text-xl font-semibold text-foreground">
               {CLINIC_INFO.name}
             </span>
@@ -45,13 +52,6 @@ export const Navbar = () => {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
-          <a
-            href={`tel:${CLINIC_INFO.phone}`}
-            className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Phone className="h-4 w-4" />
-            <span>{CLINIC_INFO.phone}</span>
-          </a>
           <Button href="/appointment" size="sm">
             Book Appointment
           </Button>
@@ -91,13 +91,6 @@ export const Navbar = () => {
               </Link>
             ))}
             <div className="pt-4 border-t border-border space-y-3">
-              <a
-                href={`tel:${CLINIC_INFO.phone}`}
-                className="flex items-center gap-2 text-sm font-medium text-muted-foreground"
-              >
-                <Phone className="h-4 w-4" />
-                <span>{CLINIC_INFO.phone}</span>
-              </a>
               <Button href="/appointment" className="w-full">
                 Book Appointment
               </Button>

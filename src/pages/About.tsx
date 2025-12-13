@@ -48,7 +48,7 @@ const About = () => {
       </section>
 
       {/* Extended Doctor Profile */}
-      <Section heading="Meet Dr. Mitchell" subheading="Your Physician">
+      <Section heading="Meet Dr. Dinesh Mahajan" subheading="Your Physician">
         <DoctorProfile extended />
       </Section>
 

@@ -1,6 +1,6 @@
 export const DOCTOR = {
-  name: "Dr. Mahajan",
-  title: "MBBS",
+  name: "Dr. Dinesh Mahajan",
+  title: "",
   specialty: "General Physician & Family Medicine",
   image: "/doctor-profile.jpg",
   bio: "With over 40 years of experience in general medicine, Dr. Mahajan is dedicated to providing comprehensive, patient-centered care. His approach combines evidence-based medicine with a genuine commitment to understanding each patient's unique health journey.",
@@ -69,27 +69,6 @@ export const SERVICES = [
       "Regular follow-up sessions",
       "Guidance for diet, exercise, and lifestyle changes",
     ],
-  },
-];
-
-export const TESTIMONIALS = [
-  {
-    id: 1,
-    name: "Rajesh Kumar",
-    text: "Dr. Mahajan truly listens. For the first time, I feel like my doctor understands my health goals and works with me as a partner. The entire staff is warm and professional.",
-    rating: 5,
-  },
-  {
-    id: 2,
-    name: "Sunita Sharma",
-    text: "After years of feeling rushed through appointments, Mahajan's Clinic is a breath of fresh air. Thorough, thoughtful care in a welcoming environment.",
-    rating: 5,
-  },
-  {
-    id: 3,
-    name: "Amit Singh",
-    text: "Our family has been visiting Dr. Mahajan for three generations. His experience and care have made a real difference in our lives.",
-    rating: 5,
   },
 ];
 

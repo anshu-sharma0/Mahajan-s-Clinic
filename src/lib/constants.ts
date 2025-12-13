@@ -1,12 +1,12 @@
 export const CLINIC_INFO = {
   name: "Mahajan's Clinic",
   tagline: "Where Care Meets Excellence",
-  phone: "(555) 123-4567",
+  phone: "+91 97802 95443",
   email: "contact@mahajansclinic.com",
-  address: "Opposite Gautam Printing Press, Railway Road",
-  city: "Dinanagar",
+  address: "Opposite Gautam Printing Press, Railway Road Dinanagar",
+  city: "",
   hours: {
-    weekdays: "8:00 AM - 6:00 PM",
+    weekdays: "9:00 AM - 5:00 PM",
     saturday: "9:00 AM - 2:00 PM",
     sunday: "Closed",
   },
@@ -20,8 +20,8 @@ export const CLINIC_INFO = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  // { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Appointment", href: "/appointment" },
+  // { label: "Appointment", href: "/appointment" },
   { label: "Contact", href: "/contact" },
 ];

@@ -50,18 +50,16 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Info Cards */}
-      <Section spacing="sm">
-        <ContactInfo />
-      </Section>
-
       {/* Form + Map */}
       <Section background="alt">
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Form */}
-          <div>
-            <h2 className="font-display text-2xl font-semibold mb-6">Send Us a Message</h2>
-            
+        <div className="grid gap-12 lg:grid-cols-5 items-start">
+
+          {/* LEFT: FORM (HERO) */}
+          <div className="lg:col-span-3">
+            <h2 className="font-display text-2xl font-semibold mb-6">
+              Send Us a Message
+            </h2>
+
             {isSubmitted ? (
               <Card variant="elevated" padding="lg" className="text-center">
                 <div className="flex justify-center mb-6">
@@ -77,7 +75,11 @@ const Contact = () => {
                 </p>
               </Card>
             ) : (
-              <Card variant="outline" padding="lg">
+              <Card
+                variant="elevated"
+                padding="lg"
+                className="shadow-lg"
+              >
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <Input
@@ -85,7 +87,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Amit Mahajan"
                       required
                     />
                     <Input
@@ -94,7 +96,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="amit@example.com"
                       required
                     />
                   </div>
@@ -106,7 +108,7 @@ const Contact = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="+91 97802 95443"
                     />
                     <Input
                       label="Subject"
@@ -136,8 +138,15 @@ const Contact = () => {
             )}
           </div>
 
+          <div className="lg:col-span-2 space-y-6">
+            <h3 className="font-display text-xl font-semibold">
+              Contact Information
+            </h3>
+
+            <ContactInfo />
+          </div>
           {/* Map */}
-          <div>
+          {/* <div>
             <h2 className="font-display text-2xl font-semibold mb-6">Our Location</h2>
             <GoogleMap />
             <div className="mt-4">
@@ -145,7 +154,7 @@ const Contact = () => {
                 We're conveniently located in the heart of San Francisco with easy access to public transit and parking available.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </Section>
 

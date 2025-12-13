@@ -1,5 +1,6 @@
 import { DOCTOR } from "@/lib/data";
 import { Award, Globe, GraduationCap } from "lucide-react";
+import DoctorImage from "@/assets/doctor-image.png";
 
 interface DoctorProfileProps {
   extended?: boolean;
@@ -9,20 +10,17 @@ export const DoctorProfile = ({ extended = false }: DoctorProfileProps) => {
   return (
     <div className="grid md:grid-cols-2 gap-12 items-center">
       {/* Image */}
-      <div className="relative">
-        <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-secondary">
-          <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-32 h-32 rounded-full bg-primary/20 mx-auto mb-4 flex items-center justify-center">
-                <GraduationCap className="w-16 h-16 text-primary" />
-              </div>
-              <p className="text-muted-foreground text-sm">Dr. Sarah Mitchell, MD</p>
-            </div>
-          </div>
+      <div className="relative flex justify-center">
+        <div className="aspect-[4/5] max-h-[400px] lg:max-h-[550px] rounded-2xl overflow-hidden bg-secondary">
+          <img
+            src={DoctorImage}
+            alt={DOCTOR.name}
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </div>
-        {/* Decorative elements */}
-        <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
-        <div className="absolute -top-4 -left-4 w-24 h-24 bg-secondary rounded-2xl -z-10" />
+
+        <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-primary/10 rounded-2xl -z-10" />
+        <div className="absolute -top-3 -left-3 w-20 h-20 bg-secondary rounded-2xl -z-10" />
       </div>
 
       {/* Content */}

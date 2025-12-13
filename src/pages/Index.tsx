@@ -16,17 +16,11 @@ const Index = () => {
       {/* Doctor Profile Section */}
       <Section heading="Meet Your Doctor" subheading="About">
         <DoctorProfile />
-        <div className="text-center mt-8">
-          <Button href="/about" variant="outline">
-            Learn More About Dr. Mitchell
-            <ArrowRight className="h-4 w-4 ml-2" />
-          </Button>
-        </div>
       </Section>
 
       <ServicesPreview />
       <WhyChooseUs />
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* CTA Section */}
       <Section background="primary" spacing="lg">
@@ -45,9 +39,9 @@ const Index = () => {
       </Section>
 
       {/* Map Section */}
-      <Section heading="Find Us" subheading="Location" spacing="sm">
+      {/* <Section heading="Find Us" subheading="Location" spacing="sm">
         <GoogleMap />
-      </Section>
+      </Section> */}
     </main>
   );
 };

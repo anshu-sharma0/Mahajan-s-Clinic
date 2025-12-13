@@ -86,7 +86,7 @@ const Appointment = () => {
             Book an Appointment
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Schedule your visit with Dr. Mitchell. Fill out the form below and we'll confirm your appointment within 24 hours.
+            Schedule your visit with Dr. Dinesh Mahajan. Fill out the form below and we'll confirm your appointment within 24 hours.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ const Appointment = () => {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    placeholder="John"
+                    placeholder="Amit"
                     required
                   />
                   <Input
@@ -111,7 +111,7 @@ const Appointment = () => {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Doe"
+                    placeholder="Mahajan"
                     required
                   />
                 </div>
@@ -123,8 +123,7 @@ const Appointment = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="john@example.com"
-                    required
+                    placeholder="amit@example.com"
                   />
                   <Input
                     label="Phone"
@@ -132,7 +131,7 @@ const Appointment = () => {
                     type="tel"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="(555) 123-4567"
+                    placeholder="+91 97802 95443"
                     required
                   />
                 </div>
@@ -148,7 +147,7 @@ const Appointment = () => {
                   />
                   <div className="w-full space-y-2">
                     <label className="block text-sm font-medium text-foreground">
-                      Preferred Time
+                      Preferred Time <span className="text-destructive">*</span>
                     </label>
                     <select
                       name="preferredTime"
@@ -205,6 +204,7 @@ const Appointment = () => {
                   value={formData.reason}
                   onChange={handleChange}
                   placeholder="Please describe the reason for your visit or any symptoms you're experiencing..."
+                  required
                 />
 
                 <Button type="submit" size="lg" className="w-full sm:w-auto">
@@ -228,12 +228,8 @@ const Appointment = () => {
                   <span className="font-medium">{CLINIC_INFO.hours.weekdays}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Saturday</span>
+                  <span className="text-muted-foreground">Sat-Sun</span>
                   <span className="font-medium">{CLINIC_INFO.hours.saturday}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Sunday</span>
-                  <span className="font-medium">{CLINIC_INFO.hours.sunday}</span>
                 </div>
               </div>
             </Card>

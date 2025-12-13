@@ -18,7 +18,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
             htmlFor={textareaId}
             className="block text-sm font-medium text-foreground"
           >
-            {label}
+            {label} {props.required && <span className="text-destructive">*</span>}
           </label>
         )}
         <textarea

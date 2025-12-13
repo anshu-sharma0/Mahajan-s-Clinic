@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { CLINIC_INFO } from "@/lib/constants";
+import InfoCard from "./InfoCard";
 
 interface ContactInfoProps {
   variant?: "default" | "compact";
@@ -14,12 +15,6 @@ export const ContactInfo = ({ variant = "default" }: ContactInfoProps) => {
       href: `tel:${CLINIC_INFO.phone}`,
     },
     {
-      icon: Mail,
-      label: "Email",
-      value: CLINIC_INFO.email,
-      href: `mailto:${CLINIC_INFO.email}`,
-    },
-    {
       icon: MapPin,
       label: "Address",
       value: `${CLINIC_INFO.address}, ${CLINIC_INFO.city}`,
@@ -28,7 +23,7 @@ export const ContactInfo = ({ variant = "default" }: ContactInfoProps) => {
       icon: Clock,
       label: "Hours",
       value: `Mon-Fri: ${CLINIC_INFO.hours.weekdays}`,
-      subValue: `Sat: ${CLINIC_INFO.hours.saturday}`,
+      subValue: `Sat-Sun: ${CLINIC_INFO.hours.saturday}`,
     },
   ];
 
@@ -61,33 +56,28 @@ export const ContactInfo = ({ variant = "default" }: ContactInfoProps) => {
   }
 
   return (
-    <div className="grid sm:grid-cols-2 gap-6">
-      {items.map((item) => (
-        <div
-          key={item.label}
-          className="flex items-start gap-4 p-6 rounded-xl bg-card border border-border"
-        >
-          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-            <item.icon className="h-6 w-6 text-primary" />
-          </div>
-          <div>
-            <p className="font-medium text-foreground">{item.label}</p>
-            {item.href ? (
-              <a
-                href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                {item.value}
-              </a>
-            ) : (
-              <p className="text-muted-foreground">{item.value}</p>
-            )}
-            {item.subValue && (
-              <p className="text-muted-foreground">{item.subValue}</p>
-            )}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+  <div className="space-y-6">
+    <InfoCard
+      icon={Phone}
+      label="Phone"
+      value={CLINIC_INFO.phone}
+      href={`tel:${CLINIC_INFO.phone}`}
+    />
+
+    <InfoCard
+      icon={Clock}
+      label="Hours"
+      value={`Mon-Fri: ${CLINIC_INFO.hours.weekdays}`}
+      subValue={`Sat-Sun: ${CLINIC_INFO.hours.saturday}`}
+    />
+
+    <InfoCard
+      icon={MapPin}
+      label="Address"
+      value={`${CLINIC_INFO.address}, ${CLINIC_INFO.city}`}
+    />
+  </div>
+);
+
+
 };

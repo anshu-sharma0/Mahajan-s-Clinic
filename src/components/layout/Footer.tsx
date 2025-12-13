@@ -21,21 +21,6 @@ export const Footer = () => {
             <p className="text-background/70 text-sm leading-relaxed">
               {CLINIC_INFO.tagline}. Providing compassionate, comprehensive healthcare for you and your family.
             </p>
-            {/* Social Links */}
-            <div className="flex gap-4 pt-2">
-              <a href={CLINIC_INFO.social.facebook} className="text-background/60 hover:text-primary transition-colors" aria-label="Facebook">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href={CLINIC_INFO.social.twitter} className="text-background/60 hover:text-primary transition-colors" aria-label="Twitter">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href={CLINIC_INFO.social.instagram} className="text-background/60 hover:text-primary transition-colors" aria-label="Instagram">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href={CLINIC_INFO.social.linkedin} className="text-background/60 hover:text-primary transition-colors" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -92,11 +77,11 @@ export const Footer = () => {
                     <span className="text-background">Mon - Fri:</span> {CLINIC_INFO.hours.weekdays}
                   </p>
                   <p className="text-background/70 mt-1">
-                    <span className="text-background">Saturday:</span> {CLINIC_INFO.hours.saturday}
+                    <span className="text-background">Sat-Sun:</span> {CLINIC_INFO.hours.saturday}
                   </p>
-                  <p className="text-background/70 mt-1">
+                  {/* <p className="text-background/70 mt-1">
                     <span className="text-background">Sunday:</span> {CLINIC_INFO.hours.sunday}
-                  </p>
+                  </p> */}
                 </div>
               </li>
             </ul>
@@ -108,14 +93,14 @@ export const Footer = () => {
           <p className="text-background/50 text-sm">
             © {currentYear} {CLINIC_INFO.name}. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
+          {/* <div className="flex gap-6 text-sm">
             <Link to="/privacy" className="text-background/50 hover:text-background transition-colors">
               Privacy Policy
             </Link>
             <Link to="/terms" className="text-background/50 hover:text-background transition-colors">
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

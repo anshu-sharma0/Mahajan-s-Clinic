@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Stethoscope } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NAV_LINKS, CLINIC_INFO } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import logoImg from "@/assets/logo.png";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,15 +17,10 @@ export const Navbar = () => {
       <nav className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <Stethoscope className="h-5 w-5 text-primary-foreground" />
-          </div>
+          <img src={logoImg} alt="Mahajan's Clinic" className="h-12 w-12 rounded-lg object-contain" />
           <div className="hidden sm:block">
             <span className="font-display text-xl font-semibold text-foreground">
-              {CLINIC_INFO.name.split(" ")[0]}
-            </span>
-            <span className="hidden md:inline font-display text-xl font-normal text-muted-foreground">
-              {" "}{CLINIC_INFO.name.split(" ").slice(1).join(" ")}
+              {CLINIC_INFO.name}
             </span>
           </div>
         </Link>

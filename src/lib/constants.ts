@@ -1,10 +1,10 @@
 export const CLINIC_INFO = {
-  name: "Harmony Medical Center",
+  name: "Mahajan's Clinic",
   tagline: "Where Care Meets Excellence",
   phone: "(555) 123-4567",
-  email: "contact@harmonymedical.com",
-  address: "2847 Wellness Boulevard, Suite 200",
-  city: "San Francisco, CA 94102",
+  email: "contact@mahajansclinic.com",
+  address: "Opposite Gautam Printing Press, Railway Road",
+  city: "Dinanagar",
   hours: {
     weekdays: "8:00 AM - 6:00 PM",
     saturday: "9:00 AM - 2:00 PM",

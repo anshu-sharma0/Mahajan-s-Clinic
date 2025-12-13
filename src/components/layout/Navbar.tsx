@@ -75,9 +75,9 @@ export const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Overlay */}
       {isOpen && (
-        <div className="lg:hidden border-t border-border bg-background animate-fade-in">
+        <div className="lg:hidden absolute top-full left-0 right-0 border-t border-border bg-background shadow-elevated animate-fade-in z-50">
           <div className="container mx-auto px-4 py-6 space-y-4">
             {NAV_LINKS.map((link) => (
               <Link

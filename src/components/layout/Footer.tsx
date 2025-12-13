@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Stethoscope } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { CLINIC_INFO, NAV_LINKS } from "@/lib/constants";
+import logoImg from "@/assets/logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +13,9 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <Stethoscope className="h-5 w-5 text-primary-foreground" />
-              </div>
+              <img src={logoImg} alt="Mahajan's Clinic" className="h-12 w-12 rounded-lg object-contain" />
               <span className="font-display text-xl font-semibold">
-                {CLINIC_INFO.name.split(" ")[0]}
+                {CLINIC_INFO.name}
               </span>
             </div>
             <p className="text-background/70 text-sm leading-relaxed">
